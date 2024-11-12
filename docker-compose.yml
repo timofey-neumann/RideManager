@@ -1,0 +1,9 @@
+services:
+  rideManager:
+    image: postgres:16.2
+    environment:
+      POSTGRES_USER: "rideManagerUser"
+      POSTGRES_PASSWORD: "rideManagerPassword"
+      POSTGRES_DB: "rideManagerDb"
+    ports:
+      - "5432:5432"
